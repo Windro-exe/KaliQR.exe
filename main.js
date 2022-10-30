@@ -46,7 +46,7 @@ app.use("/", (req, res) => {
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 2)];
-          let c = code.split(ress).join(ress + "_XASENA_");
+          let c = code.split(ress).join(ress + "_KALI_EXE_");
 
           const templateButtons = [
             {
@@ -59,8 +59,15 @@ app.use("/", (req, res) => {
             {
               index: 2,
               urlButton: {
-                displayText: "Github",
-                url: `github.com/Neeraj-x0/Millie-MD`,
+                displayText: "WebSite",
+                url: `github.com/`,
+              },
+            },
+            {
+              index: 3,
+              urlButton: {
+                displayText: "Follow",
+                url: `teamnullmodz.netlify.app`,
               },
             },
           ];
@@ -69,7 +76,7 @@ app.use("/", (req, res) => {
             text: `\nᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ
           
 ◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*`,
-            footer: "sᴇssɪᴏɴ",
+            footer: "",
             templateButtons: templateButtons,
           };
 
